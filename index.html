@@ -1,12 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/css/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS file -->
+    <link rel="shortcut icon" type="text/png" href="imgs/favicon.png" />
+    <title>Cornerstones of functional programming</title>
   </head>
+
   <body>
-    <h1>Native implementation of Array function</h1>
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-expand-md navbar-dark bg-primary py-0 fixed-top"
+    >
+      <a class="navbar-brand" href="#section-jumbotron"
+        ><i class="fa fa-snowflake-o" aria-hidden="true"></i> Tech Talk</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navLinks"
+        aria-controls="navLinks"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="#section-forEach">forEach()</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#section-map">map()</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#section-filter">filter()</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#section-reduce">reduce()</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#section-every">every()</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#section-some">some()</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section
+      id="section-jumbotron"
+      class="jumbotron jumbotron-fluid text-white d-flex justify-content-center align-items-center"
+    >
+      <div class="container text-center">
+        <h1 class="display-1 text-primary">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </h1>
+        <p class="display-4 d-none d-sm-block">
+          Cornerstones of functional programming
+        </p>
+        <p class="lead">
+          This blog let you know the implementation of Native JavaScript Methods
+          (forEach, Map, Filter, Reduce, Every, Some).
+        </p>
+        <h1>
+          <a href="#section-description"
+            ><i class="fa fa-angle-double-down" aria-hidden="true"></i
+          ></a>
+        </h1>
+      </div>
+    </section>
+    <div class="container">
+      <section id="section-forEach">
+        <h2 class="display-4 text-center">Implementing NATIVE forEach()</h2>
+        <div id="description">
+          <p class="lead">
+            The forEach() method executes a provided function once for each
+            array element. Here’s the native implementation of forEach() method
+            that helps to print each element of an array.
+          </p>
+          <img class="img-fluid" src="imgs/forEach.PNG" alt="forEach" />
+        </div>
+      </section>
+      <section id="section-map">
+        <h2 class="display-4 text-center">Implementing NATIVE map()</h2>
+        <div id="description">
+          <p class="lead">
+            The map() method is used to apply a function on every element in an
+            array. A new array is then returned. Here’s the native
+            implementation of map() method that helps to calculate the square
+            root of each element of an array.
+          </p>
+          <img class="img-fluid" src="imgs/map.PNG" alt="map" />
+        </div>
+      </section>
+      <section id="section-filter">
+        <h2 class="display-4 text-center">Implementing NATIVE filter()</h2>
+        <div id="description">
+          <p class="lead">
+            The filter() method returns a new array created from all elements
+            that pass a certain test preformed on an original array. Here’s the
+            native implementation of filter() method that helps to filter the
+            even number of an array.
+          </p>
+          <img class="img-fluid" src="imgs/Filter.PNG" alt="map" />
+        </div>
+      </section>
+      <section id="section-reduce">
+        <h2 class="display-4 text-center">Implementing NATIVE reduce()</h2>
+        <div id="description">
+          <p class="lead">
+            The reduce() method is used to apply a function to each element in
+            the array to reduce the array to a single value. Here’s the native
+            implementation of reduce() method that helps to calculate the sum of
+            all element of an array.
+          </p>
+          <img class="img-fluid" src="imgs/reduce.PNG" alt="map" />
+        </div>
+      </section>
+      <section id="section-every">
+        <h2 class="display-4 text-center">Implementing NATIVE every()</h2>
+        <div id="description">
+          <p class="lead">
+            The every() method tests whether all elements in the array pass the
+            test implemented by the provided function. Here’s the native
+            implementation of every() method that's check every element of an
+            array less than 20.
+          </p>
+          <img class="img-fluid" src="imgs/every.PNG" alt="map" />
+        </div>
+      </section>
+      <section id="section-some">
+        <h2 class="display-4 text-center">Implementing NATIVE some()</h2>
+        <div id="description">
+          <p class="lead">
+            The some() method tests whether at least one element in the array
+            passes the test implemented by the provided function. Here’s the
+            native implementation of some() method that's check at least one
+            element of an array less than 20.
+          </p>
+          <img class="img-fluid" src="imgs/some.PNG" alt="map" />
+        </div>
+      </section>
+      <section id="section-code">
+        <h2 class="display-4 text-center">Here is the Code</h2>
+        <p class="text-center">
+          Click on the link below to get all the implemented code.
+        </p>
+        <p class="text-center">
+          <u
+            ><a
+              href="https://github.com/ankitkeshari719/Native-Implementation"
+              target="blank"
+              >Code</a
+            ></u
+          >
+        </p>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small primary-color pt-4 mt-2">
+      <!-- Footer Elements -->
+      <div class="container"></div>
+      <!-- Footer Elements -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2019 Copyright:
+        <a
+          href="https://www.linkedin.com/in/ankit-keshari-a2937094/"
+          target="blank"
+        >
+          ankit@keshari</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Adding smooth scroll -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/15.2.0/smooth-scroll.min.js"
+      integrity="sha256-HweAtRDpNtoNQT2vqAStOGsOXUmXZyciQAHG66SlhXY="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(function() {
+        var scroll = new SmoothScroll('a[href*="#section-"]');
+      });
+    </script>
+    <!-- MDB core JavaScript -->
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.0/js/mdb.min.js"
+    ></script>
   </body>
 </html>
