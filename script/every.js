@@ -17,3 +17,5 @@ var isBelowTwenty = arr.myEvery(function(num) {
 });
 
 console.log(isBelowTwenty);
+
+

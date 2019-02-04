@@ -15,3 +15,4 @@ var squareRoot = arr.mymap(function(num) {
 });
 
 console.log(squareRoot);
+
